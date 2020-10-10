@@ -6,7 +6,6 @@ namespace GoogleSearchAzureTest.Base
 {
     public class BaseClass
     {
-        
         public IWebDriver driver;
         [OneTimeSetUp]
         public void Setup()
