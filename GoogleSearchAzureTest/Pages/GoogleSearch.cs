@@ -1,11 +1,13 @@
 ﻿using OpenQA.Selenium;
 using System.Threading;
 using SeleniumExtras.PageObjects;
+using System.Configuration;
 
 namespace GoogleSearchAzureTest.Pages
 {
     public class GoogleSearch
     {
+        readonly string searchText = ConfigurationManager.AppSettings["SearchText"];
         public IWebDriver driver;
 
         public GoogleSearch(IWebDriver driver)

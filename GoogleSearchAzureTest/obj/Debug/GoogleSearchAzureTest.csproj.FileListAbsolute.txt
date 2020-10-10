@@ -18,3 +18,4 @@ F:\VS\GoogleSearchAzureTest\GoogleSearchAzureTest\obj\Debug\GoogleSearchAzureTes
 F:\VS\GoogleSearchAzureTest\GoogleSearchAzureTest\obj\Debug\GoogleSearchAzureTest.dll
 F:\VS\GoogleSearchAzureTest\GoogleSearchAzureTest\obj\Debug\GoogleSearchAzureTest.pdb
 F:\VS\GoogleSearchAzureTest\GoogleSearchAzureTest\bin\Debug\WebDriver.Support.xml
+F:\VS\GoogleSearchAzureTest\GoogleSearchAzureTest\bin\Debug\GoogleSearchAzureTest.dll.config
