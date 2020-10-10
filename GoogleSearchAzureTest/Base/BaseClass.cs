@@ -16,8 +16,18 @@ namespace GoogleSearchAzureTest.Base
         [OneTimeSetUp]
         public void Setup()
         {
-            driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.AddArguments("start-maximized", "--disable-notifications","--incognito");
+            driver = new ChromeDriver(options);
             driver.Url = "https://www.google.com/";
+        }
+
+        [TearDown]
+        public void Close()
+        {
+            var filepath = $"{ TestContext.CurrentContext.TestDirectory}\\{TestContext.CurrentContext.Test.MethodName}.jpg";
+            ((ITakesScreenshot)driver).GetScreenshot().SaveAsFile(filepath);
+            TestContext.AddTestAttachment(filepath, "Test Screenshots");
         }
 
         [OneTimeTearDown]

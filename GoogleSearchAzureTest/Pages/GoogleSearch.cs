@@ -1,9 +1,5 @@
-﻿
-
-using OpenQA.Selenium;
-
+﻿using OpenQA.Selenium;
 using System.Threading;
-using GoogleSearchAzureTest.Base;
 using SeleniumExtras.PageObjects;
 
 namespace GoogleSearchAzureTest.Pages
@@ -23,8 +19,8 @@ namespace GoogleSearchAzureTest.Pages
 
         public void SearchPage()
         {
-            Search.SendKeys("Automation Testing");
-            Thread.Sleep(4000);
+            Search.SendKeys("Automation Testing"+Keys.Enter);
+            Thread.Sleep(3000);
         }
     }
 }
