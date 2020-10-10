@@ -21,8 +21,9 @@ namespace GoogleSearchAzureTest.Pages
 
         public void SearchPage()
         {
-            Search.SendKeys("Automation Testing"+Keys.Enter);
             Thread.Sleep(3000);
+            Search.SendKeys("Automation Testing"+Keys.Enter);
+            Thread.Sleep(5000);
         }
     }
 }

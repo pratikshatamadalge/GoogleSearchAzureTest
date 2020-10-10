@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 
 namespace GoogleSearchAzureTest.Base
 {
@@ -10,9 +10,9 @@ namespace GoogleSearchAzureTest.Base
         [OneTimeSetUp]
         public void Setup()
         {
-            ChromeOptions options = new ChromeOptions();
-            options.AddArguments("start-maximized", "--disable-notifications","--incognito");
-            driver = new ChromeDriver(options);
+            /*ChromeOptions options = new ChromeOptions();
+            options.AddArguments("start-maximized", "--disable-notifications","--incognito");*/
+            driver = new FirefoxDriver();
             driver.Url = "https://www.google.com/";
         }
 
