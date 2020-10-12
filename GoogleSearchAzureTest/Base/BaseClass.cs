@@ -1,9 +1,8 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-
-namespace GoogleSearchAzureTest.Base
+﻿namespace GoogleSearchAzureTest.Base
 {
+    using NUnit.Framework;
+    using OpenQA.Selenium;
+    using OpenQA.Selenium.Chrome;
     public class BaseClass
     {
         public IWebDriver driver;

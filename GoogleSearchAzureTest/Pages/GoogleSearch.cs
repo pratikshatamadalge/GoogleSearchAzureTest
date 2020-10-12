@@ -1,10 +1,9 @@
-﻿using OpenQA.Selenium;
-using System.Threading;
-using SeleniumExtras.PageObjects;
-using System.Configuration;
-
-namespace GoogleSearchAzureTest.Pages
+﻿namespace GoogleSearchAzureTest.Pages
 {
+    using OpenQA.Selenium;
+    using System.Threading;
+    using SeleniumExtras.PageObjects;
+    using System.Configuration;
     public class GoogleSearch
     {
         readonly string searchText = ConfigurationManager.AppSettings["SearchText"];

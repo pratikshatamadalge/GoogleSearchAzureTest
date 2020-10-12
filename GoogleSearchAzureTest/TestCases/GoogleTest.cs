@@ -1,9 +1,8 @@
-﻿using GoogleSearchAzureTest.Base;
-using GoogleSearchAzureTest.Pages;
-using NUnit.Framework;
-
-namespace GoogleSearchAzureTest.TestCases
+﻿namespace GoogleSearchAzureTest.TestCases
 {
+    using GoogleSearchAzureTest.Base;
+    using GoogleSearchAzureTest.Pages;
+    using NUnit.Framework;
     public class GoogleTest:BaseClass
     {
        [Test]
