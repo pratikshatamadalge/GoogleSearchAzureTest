@@ -13,7 +13,7 @@
             ChromeOptions options = new ChromeOptions();
             options.AddArguments("start-maximized", "--disable-notifications","--incognito");
             driver = new ChromeDriver(options);
-            driver.Url = "https://www.google.com/";
+            driver.Url = "https://www.google.com";
         }
 
         [TearDown]
